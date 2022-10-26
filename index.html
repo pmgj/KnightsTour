@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Knight's Tour</title>
+    <meta charset="UTF-8" />
+    <script type="module" src="GUI.js"></script>
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <link rel="icon" type="image/svg" href="Black-Knight.svg" />
+</head>
+
+<body>
+    <table>
+        <caption>Knight's Tour</caption>
+        <tbody></tbody>
+    </table>
+    <fieldset>
+        <legend>Options:</legend>
+        <form>
+            <ul>
+                <li>Board: <input type="number" name="rows" min="1" max="10" value="5" /> x <input type="number"
+                        name="cols" min="1" max="10" value="5" /></li>
+                <li><input type="button" value="Solve" name="solve" /></li>
+                <li><input type="button" value="Reset" name="reset" /></li>
+            </ul>
+        </form>
+    </fieldset>
+    <p id="message"></p>
+</body>
+
+</html>
