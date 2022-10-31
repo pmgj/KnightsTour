@@ -73,6 +73,7 @@ class GUI {
             knightCell.className = "path";
         }
         cell.innerHTML = '<img src="Black-Knight.svg" alt="">';
+        // cell.appendChild(knight);
     }
     removeKnight(ev) {
         ev.preventDefault();

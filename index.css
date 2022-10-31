@@ -1,5 +1,4 @@
 caption {
-    text-align: center;
     font-weight: bold;
     font-size: xx-large;
 }
@@ -9,12 +8,20 @@ table {
 }
 
 td {
-    width: 49px;
-    height: 49px;
     border: 3px solid black;
     text-align: center;
     color: gray;
     font-weight: bold;
+}
+
+img {
+    vertical-align: middle;
+}
+
+td, img {
+    --cell-size: 8vmin;
+    width: clamp(30px, var(--cell-size), 50px);
+    height: clamp(30px, var(--cell-size), 50px);
 }
 
 tr:nth-child(2n+1) td:nth-child(2n),
@@ -36,7 +43,7 @@ tr:nth-child(2n) td:nth-child(2n+1) {
 }
 
 fieldset {
-    width: 450px;
+    width: 250px;
     margin: 0 auto;
 }
 
